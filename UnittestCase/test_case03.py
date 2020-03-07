@@ -8,7 +8,7 @@ data = {
 }
 
 
-class TestCase01(unittest.TestCase):
+class TestCase03(unittest.TestCase):
     def setUp(self):
         print("case开始执行")
 
@@ -23,7 +23,6 @@ class TestCase01(unittest.TestCase):
     def tearDownClass(cls):
         print("case类执行结束")
 
-    @unittest.skip("这个case不想执行")
     def test_07(self):
         print("执行case07")
         flag = "qwertyuiop"
@@ -72,19 +71,4 @@ class TestCase01(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    # unittest.main()
-    # pass
-
-    # suite = unittest.TestSuite()
-    # suite.addTest(TestCase01("test_06"))
-    # suite.addTest(TestCase01("test_03"))
-    # suite.addTest(TestCase01("test_01"))
-    # runner = unittest.TextTestRunner()
-    # runner.run(suite)
-
-    # 批量添加
-    suite = unittest.TestSuite()
-    test_set = [TestCase01("test_01"), TestCase01("test_07")]
-    suite.addTests(test_set)
-    runner = unittest.TextTestRunner()
-    runner.run(suite)
+    pass
