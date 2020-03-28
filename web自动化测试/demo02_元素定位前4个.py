@@ -28,9 +28,9 @@ input03 = driver.find_element_by_class_name("telA")
 input03.send_keys("13683080000")
 time.sleep(1)
 
-# input04 = driver.find_element_by_tag_name("input")[3]
-# input04.send_keys("wengwenyu888@aliyun.com")
-# time.sleep(1)
+input04 = driver.find_elements_by_tag_name("input")[3]
+input04.send_keys("wengwenyu888@aliyun.com")
+time.sleep(1)
 
 time.sleep(3)
 driver.quit()
