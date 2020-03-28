@@ -7,10 +7,9 @@ url = r"C:\Users\wengw\Documents\automation_test\web自动化测试\素材\注�
 # 打开指定URL
 driver.get(url)
 
-input01 = driver.find_element_by_xpath('//*[@id="userA"]')
+# 通过css选择器的方式定位元素
+input01 = driver.find_element_by_css_selector('#userA')
 input01.send_keys("zhangsan")
-# print(input01)
-
 time.sleep(3)
 # 关闭浏览器
 driver.quit()
