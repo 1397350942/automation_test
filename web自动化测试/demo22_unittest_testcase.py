@@ -19,7 +19,7 @@ class TestCase01(unittest.TestCase):
     def testcase_01(self) -> None:
         print("testcase_01")
         print("1+1=", add(1, 1))
-        # self.assertEqual(2, add(1, 2))
+        self.assertEqual(2, add(1, 2))
 
     def testcase_02(self) -> None:
         print("testcase_02")
