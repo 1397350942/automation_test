@@ -33,6 +33,7 @@ driver.find_element_by_xpath("/html/body/input[3]").click()
 alter = driver.switch_to.alert
 time.sleep(1)
 print(alter.text)
+alter.send_keys("哈哈") # 只有火狐浏览器好使
 time.sleep(2)
 # 进行操作
 alter.dismiss()
